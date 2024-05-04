@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-Commerce Website</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Custom CSS styles */
+    /* Navbar */
+    .navbar {
+        background-color: #343a40 !important;
+    }
+    /* Header */
+    header {
+        background-color: #f8f9fa;
+        padding: 20px 0;
+        text-align: center;
+    }
+    /* Footer */
+    footer {
+        background-color: #343a40;
+        color: white;
+        text-align: center;
+        padding: 20px 0;
+    }
+    /* Gallery */
+    .gallery img {
+        width: 100%;
+        height: auto;
+    }
+    .gallery-item {
+        padding: 5px;
+    }
+    /* Additional Styling */
+    .feature-box {
+        border: 1px solid #dee2e6;
+        padding: 20px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        text-align: center;
+    }
+    .feature-box h3 {
+        color: #007bff;
+    }
+    .feature-box p {
+        color: #6c757d;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">E-Commerce</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="products.html">Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="partners.html">Partners</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" data-toggle="modal" data-target="#loginModal">Login</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header>
+    <h1>Welcome to our E-Commerce Website</h1>
+    <p>Shop the latest trends in fashion and accessories</p>
+  </header>
+
+  <!-- Modal for Login -->
+  <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="loginModalLabel">Login</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="username">Username</label>
+              <input type="text" class="form-control" id="username" placeholder="Enter your username">
+            </div>
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input type="password" class="form-control" id="password" placeholder="Enter your password">
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Login</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <div class="container">
+    <!-- Home Page Content -->
+    <div id="home">
+      <h2>Home Page</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="feature-box">
+            <h3>Fast Delivery</h3>
+            <p>Get your orders delivered quickly with our efficient shipping service.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="feature-box">
+            <h3>24/7 Customer Support</h3>
+            <p>Our dedicated support team is available round the clock to assist you.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="feature-box">
+            <h3>Secure Payment</h3>
+            <p>Shop with confidence using our secure payment methods.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- About Us Page Content -->
+    <div id="about">
+      <h2>About Us</h2>
+      <p>Learn more about our company and our mission to provide high-quality products and excellent customer service.</p>
+    </div>
+
+    <!-- Products Page Content -->
+    <div id="products">
+      <h2>Products</h2>
+      <p>Discover our wide range of products including clothing, accessories, electronics, and more.</p>
+    </div>
+
+    <!-- Partners Page Content -->
+    <div id="partners">
+      <h2>Partners</h2>
+      <p>Meet our trusted partners and collaborators who help us bring the best products to our customers.</p>
+    </div>
+
+    <!-- Contact Us Page Content -->
+    <div id="contact">
+      <h2>Contact Us</h2>
+      <p>Get in touch with us if you have any questions, feedback, or inquiries. We're here to help!</p>
+    </div>
+    <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <h4>Contact Us</h4>
+              <p>Email: info@example.com</p>
+              <p>Phone: +1-123-456-7890</p>
+            </div>
+            <div class="col-md-4">
+              <h4>Follow Us</h4>
+              <ul class="list-unstyled">
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Instagram</a></li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <h4>Address</h4>
+              <p>123 Street, City, Country</p>
+            </div>
+          </div>
+          <div class="row mt-3">
+            <div class="col-md-12 text-center">
+              &copy; 2024 E-Commerce Website. All rights reserved.
+            </div>
+          </div>
+        </div>
+      </footer>
+      
